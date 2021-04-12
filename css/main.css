@@ -2,7 +2,7 @@
     --primary-font: 'Heebo', sans-serif;
     --secondary-font: 'Source Sans Pro', sans-serif;
     --primary-color: #4338CA;
-    --secondary-color: #22C55E;
+    --secondary-color: #4ADE80;
     --gradient-color: linear-gradient(to bottom right, #4338CA, #6366F1);
     --text-color: #1B1A31;
     --text-white-color: #f8f9fa;
@@ -28,3 +28,83 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+html {
+    font-size: 16px;   
+}
+
+/* main */
+#main {
+    padding: 2em 6em;
+}
+/* header */
+/* header nav */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--primary-font);
+}
+.nav-items a{
+    text-decoration: none;
+    margin-left: 1em;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+/* header hero */
+.header-hero {
+    width: 100%;
+    background: var(--gradient-color);
+    margin-top: 2em;
+    border-radius: 1.5em;
+    font-family: var(--primary-font);
+    position: relative;
+    overflow: hidden;
+}
+.hero-title {
+    width: 35%;
+    padding: 4em 5em;
+}
+.hero-title h1 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.15em;
+    color: var(--text-white-color);
+    margin-bottom: 1em;
+}
+.hero-title h1 span {
+    color: var(--secondary-color);
+}
+.hero--title-hashtag {
+    font-size: 1.25em;
+    margin-bottom: 2em;
+    color: var(--text-white-color);
+    opacity: 0.6;
+}
+.hero--title-btn {
+    text-decoration: none;
+    background-color: rgba(196,196,196, 0.3);
+    color: var(--text-white-color);
+    padding: 0.95em 3.75em;
+    border-radius: 0.5em;
+    transition: 0.2s;
+}
+.hero--title-btn:hover {
+    background-color: rgba(196,196,196, 0.6);
+}
+.hero-img {
+    position: absolute;
+    right: -30px;
+    top: -25px;
+}
+
+/* about */
+.about {
+    margin-top: 5em;
+    font-family: var(--primary-font);
+}
+.about h2 {
+    text-align: center;
+    font-size: 2em;
+}
+/* end main */
