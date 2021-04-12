@@ -119,6 +119,9 @@ hr {
     padding: 2em;
     border-radius: 1em;
 }
+.card-text-color {
+    color: var(--text-color);
+}
 .cards-card--blue {
     background: var(--gradient-color);
     color: var(--text-white-color);
@@ -128,6 +131,7 @@ hr {
 }
 .card-title-blue h3 {
     font-size: 1.35em;
+    font-weight: 600;
 }
 .card-title-blue p {
     font-family: var(--secondary-font);
@@ -138,6 +142,7 @@ hr {
 }
 .cards--card-title  h3 {
     font-size: 1.35em;
+    font-weight: 600;
 }
 .cards--card-title p {
     font-family: var(--secondary-font);
@@ -155,6 +160,7 @@ hr {
 .services h2 {
     text-align: center;
     font-size: 2em;
+    color: var(--text-color);
 }
 .services-content {
     margin-top: 4em;
@@ -175,6 +181,9 @@ hr {
 }
 .content--title-service {
     margin-top: 0.75em;
+}
+.title-service-color {
+    color: var(--text-color);
 }
 .content--title-service  h3 {
     font-size: 1.35em;
@@ -209,6 +218,7 @@ hr {
 .contact h2 {
     text-align: center;
     font-size: 2em;
+    color: var(--text-color);
 }
 .contact-content {
     display: flex;
@@ -221,6 +231,9 @@ hr {
     background-size: cover;
     background-position: left;
     margin-right: 4em;
+}
+.contact-info-color {
+    color: var(--text-color);
 }
 .contact-info h5 {
     margin-bottom: 16px;
@@ -249,7 +262,7 @@ hr {
     min-height: 200px;
     background-color: #E5E5E5;
     border-radius: 1em;
-    opacity: 0.2;
+    opacity: 0.1;
     position: relative;
     right: -120px;
 }
