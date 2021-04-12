@@ -112,6 +112,7 @@ hr {
 }
 .about-cards {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 3em;
 }
@@ -297,3 +298,153 @@ hr {
     opacity: 0.6;
 }
 /* end main */
+
+/* ressponsive */
+@media (max-width: 1093px) {
+    #main {
+        padding: 3em 5em;
+    }
+    .hero-img {
+        width: 900px;
+        top: -30px;
+        right: -500px;
+    }
+    .hero-title {
+        width: 50%;
+        padding: 6em 5em;
+    }
+    .content-menu-service {
+        width: 100%;
+    }
+    .contact-img {
+        width: 70%;
+    }
+}
+
+/* 900 */
+@media (max-width: 900px) {
+    #main {
+        padding: 3em 5em;
+    }
+    .hero-img {
+        width: 900px;
+        top: -30px;
+        right: -550px;
+    }
+    .hero-title {
+        width: 50%;
+        padding: 6em 5em;
+    }
+    .content-menu-service {
+        width: 100%;
+    }
+    .content-menu-service img {
+        padding-right: 1em;
+    }
+    .services--img-content {
+        width: 45%;
+    }
+    .content-service {
+        width: 50%;
+    }
+    .contact-img {
+        width: 70%;
+    }
+}
+
+/* 766 */
+@media (max-width: 766px) {
+    #main {
+        padding: 3em 4em;
+    }
+    .hero-img {
+       display: none;
+    }
+    .header-hero {
+        width: 100%;
+    }
+    .hero-title {
+        width: 90%;
+        text-align: center;
+        padding: 6em 3em;
+    }
+    .nav-items {
+        display: none;
+    }
+    .about-cards {
+        gap: 2em;
+    }
+    .about--cards-card {
+        padding: 2em 4em;
+        border-radius: 1em;
+        text-align: center;
+    }
+    .content-menu-service {
+        width: 100%;
+        justify-content: center;
+    }
+    .services--img-content {
+        width: 43%;
+        display: none;
+    }
+    .content-service {
+        width: 100%;
+    }
+    .contact-img {
+        width: 900px;
+    }
+}
+
+/* 438 */
+@media (max-width: 766px) {
+    #main {
+        padding: 3em 2em;
+    }
+    .hero-img {
+       display: none;
+    }
+    .header-hero {
+        width: 100%;
+    }
+    .hero-title {
+        width: 80%;
+        text-align: center;
+        padding: 6em 3em;
+    }
+    .nav-items {
+        display: none;
+    }
+    .about-cards {
+        gap: 1em;
+    }
+    .about--cards-card {
+        padding: 2em 4em;
+        border-radius: 1em;
+        text-align: center;
+    }
+    .content-menu-service {
+        width: 100%;
+        justify-content: center;
+    }
+    .services--img-content {
+        width: 43%;
+        display: none;
+    }
+    .content-service {
+        width: 100%;
+    }
+    .contact-img {
+        width: 900px;
+        display: none;
+    }
+    .contact-blank-bg {
+        display: none;
+    }
+    .contact-info {
+        text-align: center;
+        margin: 1em auto;
+    }
+}
+
+
+/* end responsive */
