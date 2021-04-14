@@ -30,3 +30,12 @@ function changeTheme() {
     contactTitle.classList.toggle('dark-mode');
     contactInfo.classList.toggle('dark-mode');
 };
+
+// language
+const textLanguage = document.querySelectorAll('.text-language');
+textLanguage.forEach( language => {
+    language.addEventListener('click', function() {
+        const languageDrop = document.querySelector('.language-dropdown');
+        languageDrop.classList.toggle('active');
+    });
+} );

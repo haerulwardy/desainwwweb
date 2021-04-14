@@ -72,8 +72,45 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 160px;
+    width: 180px;
 }
+
+/* language */
+.langauge-switcher {
+    margin-right: 2em;
+    position: relative;
+}
+.language-item {
+    display: flex;
+    align-items: center;
+}
+.text-language {
+    font-family: var(--primary-font);
+    color: rgba(19, 31, 51, 0.6);
+    cursor: pointer;
+}
+.language-item img {
+    padding-right: 0.75em;
+}
+.language-dropdown {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background-color: #eeeeee;
+    border-radius: 0.25em;
+    padding: 1em;
+    z-index: 10;
+    visibility: hidden;
+    transition: 0.1s;
+    transform: translateY(-10px);
+    opacity: 0.2;
+}
+.language-dropdown.active {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+/* end language */
 
 /* darkmode */
 .theme-switch-wrapper {
