@@ -4,8 +4,15 @@
     --primary-color: #4338CA;
     --secondary-color: #4ADE80;
     --gradient-color: linear-gradient(to bottom right, #4338CA, #6366F1);
-    --text-color: #1B1A31;
-    --text-white-color: #f8f9fa;
+    --text-color: #131f33;
+    --text-white-color: #d3d1db;
+
+    /* dark mode */
+    --dark-mode-bg: #131f33;
+    --dark-mode-cta: #bbd0ff;
+    --dark-mode-text: #cfd2d6;
+    --dark-mode-tertiary: #acb1b8;
+    --dark-mode-card: #1e293c;
 }
 /* css reset */
 html, body, div, span, applet, object, iframe,
@@ -34,9 +41,8 @@ html {
 body {
     overflow-x: hidden;
 }
-.dark-mode {
-    background-color: black;
-    color: white;
+body.dark-mode {
+    background-color: var(--dark-mode-bg);
 }
 hr {
     opacity: 0.4;
@@ -53,14 +59,79 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
+    font-weight: 500;
 }
+.header--nav-items {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header--nav-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+}
+
+/* darkmode */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+.theme-switch input {
+    display: none;
+  }
+.slider {
+    background-color: rgb(172, 171, 171);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+.slider:before {
+    background-color: var(--dark-mode-text);
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+  }
+  input:checked + .slider {
+    background-color: var(--primary-color);
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* end darkmode */
 .nav-items a{
     text-decoration: none;
-    margin-left: 1em;
     color: var(--text-color);
+    margin-left: 1em;
     font-weight: 500;
     font-size: 1.15rem;
+}
+.nav-items a.dark-mode {
+    color: var(--dark-mode-tertiary);
 }
 /* header hero */
 .header-hero {
@@ -72,6 +143,9 @@ hr {
     position: relative;
     overflow: hidden;
 }
+.header-hero.dark-mode {
+    background: var(--dark-mode-card);
+}
 .hero-title {
     width: 35%;
     padding: 6em 5em;
@@ -82,6 +156,9 @@ hr {
     line-height: 1.15em;
     color: var(--text-white-color);
     margin-bottom: 1em;
+}
+.hero-title h1 {
+    color: var(--dark-mode-text);
 }
 .hero-title h1 span {
     color: var(--secondary-color);
@@ -99,6 +176,13 @@ hr {
     padding: 0.95em 3.75em;
     border-radius: 0.5em;
     transition: 0.2s;
+}
+.hero--title-btn.dark-mode {
+    background: var(--gradient-color);
+}
+.hero--title-btn.dark-mode:hover {
+    background: var(--gradient-color);
+    opacity: 0.8;
 }
 .hero--title-btn:hover {
     background-color: rgba(196,196,196, 0.6);
@@ -127,9 +211,16 @@ hr {
 .card-text-color {
     color: var(--text-color);
 }
+.card-text-color.dark-mode {
+    color: var(--dark-mode-tertiary);
+}
 .cards-card--blue {
     background: var(--gradient-color);
     color: var(--text-white-color);
+}
+.cards-card--blue.dark-mode {
+    background: var(--dark-mode-card);
+    color: var(--dark-mode-tertiary);
 }
 .cards--card-title {
     margin-top: 0.75em;
@@ -167,6 +258,9 @@ hr {
     font-size: 2em;
     color: var(--text-color);
 }
+.services h2.dark-mode {
+    color: var(--dark-mode-text);
+}
 .services-content {
     margin-top: 4em;
     display: flex;
@@ -189,6 +283,9 @@ hr {
 }
 .title-service-color {
     color: var(--text-color);
+}
+.title-service-color.dark-mode {
+    color: var(--dark-mode-tertiary);
 }
 .content--title-service  h3 {
     font-size: 1.35em;
@@ -225,6 +322,9 @@ hr {
     font-size: 2em;
     color: var(--text-color);
 }
+.contact h2.dark-mode {
+    color: var(--dark-mode-text);
+}
 .contact-content {
     display: flex;
     margin-top: 4em;
@@ -239,6 +339,9 @@ hr {
 }
 .contact-info-color {
     color: var(--text-color);
+}
+.contact-info-color.dark-mode {
+    color: var(--dark-mode-tertiary);
 }
 .contact-info h5 {
     margin-bottom: 16px;
@@ -451,8 +554,6 @@ hr {
     .contact-content {
         display: flex;
         margin-top: 2em;
-git branch    }
+    }
 }
-
-
-/* end responsive */
+/* end main */
