@@ -89,6 +89,9 @@ hr {
     color: rgba(19, 31, 51, 0.6);
     cursor: pointer;
 }
+.text-language.dark-mode {
+    color: var(--dark-mode-tertiary);
+}
 .language-item img {
     padding-right: 0.75em;
 }

@@ -32,10 +32,26 @@ function changeTheme() {
 };
 
 // language
-const textLanguage = document.querySelectorAll('.text-language');
-textLanguage.forEach( language => {
-    language.addEventListener('click', function() {
-        const languageDrop = document.querySelector('.language-dropdown');
-        languageDrop.classList.toggle('active');
-    });
-} );
+// const textLanguage = document.querySelectorAll('.text-language');
+// textLanguage.forEach( language => {
+//     language.addEventListener('click', function() {
+        // active menu
+    //     const languageDrop = document.querySelector('.language-dropdown');
+    //     languageDrop.classList.toggle('active');
+    // });
+    // dark mode
+//     language.classList.toggle('dark-mode');
+// } );
+
+const indoMenu = document.querySelector('.indonesia');
+indoMenu.addEventListener('click', function() {
+    const languageDrop = document.querySelector('.language-dropdown');
+    languageDrop.classList.toggle('active');
+    languageDrop.addEventListener('click', function() {
+        if ( indoMenu.lastElementChild.innerText = 'Indonesia' ) {
+            indoMenu.firstElementChild.src = languageDrop.firstElementChild.src;
+            indoMenu.lastElementChild.innerText = 'English';
+            languageDrop.classList.toggle('active');
+        }
+    })
+})
