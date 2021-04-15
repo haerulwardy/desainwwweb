@@ -347,7 +347,7 @@ hr {
 
 /* contact */
 .contact {
-    margin-top: 8em;
+    margin-top: 4em;
     margin-bottom: 8em;
     font-family: var(--primary-font);
 }
@@ -421,7 +421,7 @@ hr {
 
 /* footer */
 .footer {
-    border-radius: 1.5em;
+    /* border-radius: 1.5em; */
     background: var(--gradient-color);
     padding: 2em 4em;
     font-family: var(--primary-font);
