@@ -55,3 +55,14 @@ if ( indoMenu.innerText === 'Indonesia' ) {
     });
 
 };
+
+const sidebarMenu = document.querySelector('.sidebar-menu');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+hamburgerMenu.addEventListener('click', function() {
+    sidebarMenu.classList.add('active')
+    
+    const closeMenu = document.querySelector('.close');
+    closeMenu.addEventListener('click', function() {
+        sidebarMenu.classList.remove('active')
+    });
+});
