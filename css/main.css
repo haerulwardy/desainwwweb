@@ -38,9 +38,9 @@ time, mark, audio, video {
 html {
     font-size: 16px;   
 }
-body {
+/* body {
     overflow-x: hidden;
-}
+} */
 body.dark-mode {
     background-color: var(--dark-mode-bg);
 }
@@ -73,6 +73,68 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 220px;
+}
+.nav-logo img:nth-child(2) {
+    display: none;
+}
+/* responsive */
+.hamburger-menu {
+    width: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* rsidebar */
+.sidebar-menu {
+    height: 100vh;
+    width: 240px;
+    background: var(--dark-mode-bg);
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    /* position */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em 4em;
+
+    /* font */
+    font-family: var(--primary-font);
+    visibility: hidden;
+}
+.sidebar-menu.active {
+    visibility: visible;
+}
+.sidebar-menus {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.1s;
+}
+.sidebar-menus a  {
+    width: 100%;
+    margin-top: 1em;
+    padding: 1.5em 2em;
+    color: var(--text-white-color);
+    text-decoration: none;
+}
+.sidebar-menus a:hover {
+    background-color: rgba(196,196,196, 0.3);
+    border-radius: 0.75em;
+}
+.sidebar-logo {
+    align-self: flex-end;
+}
+.sidebar-copyright {
+    position: absolute;
+    bottom: 200px;
+    color: var(--dark-mode-tertiary);
 }
 
 /* language */
@@ -174,6 +236,9 @@ hr {
     color: var(--dark-mode-tertiary);
 }
 /* header hero */
+.header {
+    width: 100%;
+}
 .header-hero {
     width: 100%;
     background: var(--gradient-color);
@@ -188,7 +253,7 @@ hr {
 }
 .hero-title {
     width: 35%;
-    padding: 6em 5em;
+    padding: 4em 5em;
 }
 .hero-title h1 {
     font-size: 3em;
@@ -197,7 +262,7 @@ hr {
     color: var(--text-white-color);
     margin-bottom: 1em;
 }
-.hero-title h1 {
+.hero-title h1.dark-mode {
     color: var(--dark-mode-text);
 }
 .hero-title h1 span {
@@ -445,15 +510,6 @@ hr {
     #main {
         padding: 3em 5em;
     }
-    .hero-img {
-        width: 900px;
-        top: -30px;
-        right: -500px;
-    }
-    .hero-title {
-        width: 50%;
-        padding: 6em 5em;
-    }
     .contact-img {
         width: 70%;
     }
@@ -464,14 +520,11 @@ hr {
     #main {
         padding: 3em 5em;
     }
-    .hero-img {
-        width: 900px;
-        top: -30px;
-        right: -550px;
+    .nav-logo img:nth-child(2) {
+        display: block;
     }
-    .hero-title {
-        width: 50%;
-        padding: 6em 5em;
+    .nav-logo img:nth-child(1) {
+        display: none;
     }
     .services--img-content {
         width: 45%;
@@ -489,18 +542,28 @@ hr {
     #main {
         padding: 3em 4em;
     }
-    .hero-img {
-       display: none;
+    .nav-items {
+        display: none;
+    }
+    .nav-logo img:nth-child(2) {
+        display: block;
+    }
+    .nav-logo img:nth-child(1) {
+        display: none;
+    }
+    .nav-items {
+        display: none;
     }
     .header-hero {
         width: 100%;
     }
     .hero-title {
         width: 90%;
+        margin: 0 auto;
         text-align: center;
-        padding: 6em 3em;
+        padding: 4em 0;
     }
-    .nav-items {
+    .hero-img {
         display: none;
     }
     .about-cards {
@@ -524,22 +587,32 @@ hr {
 }
 
 /* 438 */
-@media (max-width: 766px) {
+@media (max-width: 500px) {
     #main {
         padding: 3em 2em;
     }
-    .hero-img {
-       display: none;
+    .nav-items {
+        display: none;
+    }
+    .nav-logo img:nth-child(1) {
+        display: none;
+    }
+    .nav-items {
+        display: none;
+    }
+    .nav-logo img:nth-child(1) {
+        display: none;
     }
     .header-hero {
         width: 100%;
     }
     .hero-title {
-        width: 80%;
+        width: 90%;
+        margin: 0 auto;
         text-align: center;
-        padding: 6em 3em;
+        padding: 4em 0;
     }
-    .nav-items {
+    .hero-img {
         display: none;
     }
     .about-cards {
