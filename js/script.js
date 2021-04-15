@@ -31,27 +31,27 @@ function changeTheme() {
     contactInfo.classList.toggle('dark-mode');
 };
 
-// language
-// const textLanguage = document.querySelectorAll('.text-language');
-// textLanguage.forEach( language => {
-//     language.addEventListener('click', function() {
-        // active menu
-    //     const languageDrop = document.querySelector('.language-dropdown');
-    //     languageDrop.classList.toggle('active');
-    // });
-    // dark mode
-//     language.classList.toggle('dark-mode');
-// } );
-
 const indoMenu = document.querySelector('.indonesia');
-indoMenu.addEventListener('click', function() {
-    const languageDrop = document.querySelector('.language-dropdown');
-    languageDrop.classList.toggle('active');
-    languageDrop.addEventListener('click', function() {
-        if ( indoMenu.lastElementChild.innerText = 'Indonesia' ) {
-            indoMenu.firstElementChild.src = languageDrop.firstElementChild.src;
+const engMenu = document.querySelector('.english');
+
+if ( indoMenu.innerText === 'Indonesia' ) {
+    indoMenu.addEventListener('click', function() {
+        engMenu.classList.add('active');
+    });
+    engMenu.addEventListener('click', function() {
+        if ( engMenu.innerText === 'English' ) {
+            indoMenu.firstElementChild.src = './assets/icons/english.svg';
             indoMenu.lastElementChild.innerText = 'English';
-            languageDrop.classList.toggle('active');
+            engMenu.firstElementChild.src = './assets/icons/indonesia.svg';
+            engMenu.lastElementChild.innerText = 'Indonesia';
+            engMenu.classList.remove('active');
+        } else if ( engMenu.innerText === 'Indonesia' ) {
+            indoMenu.firstElementChild.src = './assets/icons/indonesia.svg';
+            indoMenu.lastElementChild.innerText = 'Indonesia';
+            engMenu.firstElementChild.src = './assets/icons/english.svg';
+            engMenu.lastElementChild.innerText = 'English';
+            engMenu.classList.remove('active');
         }
-    })
-})
+    });
+
+};
