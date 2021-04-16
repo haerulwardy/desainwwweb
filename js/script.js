@@ -40,15 +40,15 @@ if ( indoMenu.innerText === 'Indonesia' ) {
     });
     engMenu.addEventListener('click', function() {
         if ( engMenu.innerText === 'English' ) {
-            indoMenu.firstElementChild.src = './Assets/icons/english.svg';
+            indoMenu.firstElementChild.src = './equipment/icons/english.svg';
             indoMenu.lastElementChild.innerText = 'English';
-            engMenu.firstElementChild.src = './Assets/icons/indonesia.svg';
+            engMenu.firstElementChild.src = './equipment/icons/indonesia.svg';
             engMenu.lastElementChild.innerText = 'Indonesia';
             engMenu.classList.remove('active');
         } else if ( engMenu.innerText === 'Indonesia' ) {
-            indoMenu.firstElementChild.src = './Assets/icons/indonesia.svg';
+            indoMenu.firstElementChild.src = './equipment/icons/indonesia.svg';
             indoMenu.lastElementChild.innerText = 'Indonesia';
-            engMenu.firstElementChild.src = './Assets/icons/english.svg';
+            engMenu.firstElementChild.src = './equipment/icons/english.svg';
             engMenu.lastElementChild.innerText = 'English';
             engMenu.classList.remove('active');
         }
