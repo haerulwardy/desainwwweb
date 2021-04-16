@@ -366,7 +366,7 @@ hr {
 .services--img-content {
     width: 55%;
     min-height: 300px;
-    background: url('../assets/svg/service.svg');
+    background: url('../Assets/svg/service.svg');
     background-size: cover;
     border-radius: 1.5em;
 }
@@ -392,7 +392,7 @@ hr {
 .contact-img {
     width: 50%;
     min-height: 200px;
-    background: url('../assets/svg/contact-2.svg');
+    background: url('../Assets/svg/contact-2.svg');
     background-size: cover;
     background-position: left;
     margin-right: 4em;
