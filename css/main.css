@@ -676,3 +676,10 @@ hr {
     }
 }
 /* end main */
+
+@media (max-width: 340) {
+    body {
+        display: none;
+        background-color: red;
+    }
+}
