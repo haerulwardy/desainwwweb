@@ -58,15 +58,14 @@ if ( indoMenu.innerText === 'Indonesia' ) {
 
 };
 
-const sidebarMenu = document.querySelector('.sidebar-menu');
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-hamburgerMenu.addEventListener('click', function() {
-    sidebarMenu.classList.add('active')
-    
-    const closeMenu = document.querySelector('.close');
-    closeMenu.addEventListener('click', function() {
-        sidebarMenu.classList.remove('active')
-    });
-});
-
 // nav items
+const navItems = document.querySelectorAll('.nav-items a');
+navItems.forEach( item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        for ( let i = 0; i < navItems.length; i++ ) {
+            navItems[i].classList.remove('active');
+        };
+        this.classList.add('active');
+    });
+} );
