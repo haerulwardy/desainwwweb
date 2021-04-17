@@ -53,6 +53,8 @@ if ( indoMenu.innerText === 'Indonesia' ) {
             engMenu.classList.remove('active');
         }
     });
+    indoMenu.classList.toggle('dark-mode');
+    engMenu.classList.toggle('dark-mode');
 
 };
 
@@ -66,3 +68,5 @@ hamburgerMenu.addEventListener('click', function() {
         sidebarMenu.classList.remove('active')
     });
 });
+
+// nav items
