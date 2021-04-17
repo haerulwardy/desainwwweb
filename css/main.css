@@ -38,9 +38,9 @@ time, mark, audio, video {
 html {
     font-size: 16px;   
 }
-/* body {
+body {
     overflow-x: hidden;
-} */
+}
 body.dark-mode {
     background-color: var(--dark-mode-bg);
 }
@@ -52,18 +52,33 @@ hr {
 /* main */
 #main {
     padding: 3em 6em;
+    position: relative;
 }
 /* header */
 /* header nav */
 .header-nav {
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 3em 0;
+}
+.header-nav-container {
+    width: 86%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: var(--secondary-font);
     font-weight: 500;
+    /* background-color: green; */
 }
 .header--nav-items {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
