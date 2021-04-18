@@ -6,6 +6,7 @@ toggleBtn.addEventListener('click', function() {
 function changeTheme() {
     const body = document.body;
     const navLink = document.querySelectorAll('.nav-items a');
+    const headerNav = document.querySelector('.header-nav');
     const headerHero = document.querySelector('.header-hero');
     const heroBtn = document.querySelector('.hero--title-btn');
     const aboutCards = document.querySelectorAll('.about--cards-card');
@@ -18,6 +19,7 @@ function changeTheme() {
     navLink.forEach(link => {
         link.classList.toggle('dark-mode')
     });
+    headerNav.classList.toggle('dark-mode');
     headerHero.classList.toggle('dark-mode');
     heroBtn.classList.toggle('dark-mode');
     aboutCards.forEach(card => {
