@@ -187,12 +187,18 @@ hr {
 .nav-items a{
     text-decoration: none;
     color: var(--text-color);
+    opacity: 0.6;
     margin-left: 1em;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 1.15rem;
+    transition: ease 0.1s;
+}
+.nav-items a:hover {
+    color: var(--primary-color);
 }
 .nav-items a.active {
-    font-weight: 600;
+    color: var(--primary-color);
+    opacity: 1;
 }
 .nav-items a.dark-mode {
     color: var(--dark-mode-tertiary);
@@ -622,9 +628,6 @@ hr {
         display: none;
     }
     .nav-logo img:nth-child(1) {
-        display: none;
-    }
-    .nav-items {
         display: none;
     }
     .nav-logo img:nth-child(1) {

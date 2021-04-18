@@ -61,15 +61,43 @@ if ( indoMenu.innerText === 'Indonesia' ) {
 };
 
 // nav items
-const navItems = document.querySelectorAll('.nav-items a');
-navItems.forEach( item => {
-    item.addEventListener('click', function() {
+// const navItems = document.querySelectorAll('.nav-items a');
+// navItems.forEach( item => {
+//     item.addEventListener('click', function() {
+//         for ( let i = 0; i < navItems.length; i++ ) {
+//             navItems[i].classList.remove('active');
+//         };
+//         this.classList.add('active');
+
+//     });
+// } );
+
+// scroll animation
+window.addEventListener('scroll', function() {
+    const home = document.getElementById('hero');
+    const about = document.getElementById('about');
+    const services = document.getElementById('services');
+    const contact = document.getElementById('contact');
+
+    const homeLink = document.querySelector('a[href="#hero"]');
+    const aboutLink = document.querySelector('a[href="#about"]');
+    const servicesLink = document.querySelector('a[href="#services"]');
+    const contactLink = document.querySelector('a[href="#contact"]');
+    scrollMenuActive(home, homeLink);
+    scrollMenuActive(about, aboutLink);
+    scrollMenuActive(services, servicesLink);
+    scrollMenuActive(contact, contactLink);
+    
+});
+
+function scrollMenuActive(offset, link) {
+    if ( window.scrollY >= offset.offsetTop - 200 ) {
+        const navItems = document.querySelectorAll('.nav-items a');
         for ( let i = 0; i < navItems.length; i++ ) {
             navItems[i].classList.remove('active');
         };
-        this.classList.add('active');
-
-    });
-} );
-
-// scroll animation
+        link.classList.add('active');
+    } else {
+        link.classList.remove('active');
+    };
+};
