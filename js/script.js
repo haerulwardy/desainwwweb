@@ -61,11 +61,13 @@ if ( indoMenu.innerText === 'Indonesia' ) {
 // nav items
 const navItems = document.querySelectorAll('.nav-items a');
 navItems.forEach( item => {
-    item.addEventListener('click', function(e) {
-        e.preventDefault();
+    item.addEventListener('click', function() {
         for ( let i = 0; i < navItems.length; i++ ) {
             navItems[i].classList.remove('active');
         };
         this.classList.add('active');
+
     });
 } );
+
+// scroll animation

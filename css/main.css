@@ -36,7 +36,8 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 html {
-    font-size: 16px;   
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 body {
     overflow-x: hidden;
@@ -66,7 +67,7 @@ hr {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-    padding: 3em 0;
+    padding: 3em 0 1em 0;
 }
 .header-nav-container {
     width: 86%;
@@ -200,7 +201,7 @@ hr {
 .header-hero {
     width: 100%;
     background: var(--gradient-color);
-    margin-top: 2em;
+    margin-top: 4.25em;
     border-radius: 1.5em;
     font-family: var(--primary-font);
     position: relative;
@@ -258,6 +259,7 @@ hr {
 
 /* about */
 .about {
+    height: 100%;
     margin-top: 6em;
     font-family: var(--primary-font);
 }
