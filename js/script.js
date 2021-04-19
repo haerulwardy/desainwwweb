@@ -67,8 +67,8 @@ function englishLang() {
     // contact
     changeInnerText(contactTitle, language.eng.contactTitle);
     // footer link
-    footerLink.forEach((item, i) => {
-        item = changeInnerText(item, language.eng.navLinkLang[i]);
+    footerLink.forEach((footer, i) => {
+        footer = changeInnerText(footer, language.eng.navLinkLang[i]);
     });
 };
 // indo
@@ -88,7 +88,7 @@ function indoLang() {
     };
     // nav
     navItems.forEach((item, i) => {
-        item = changeInnerText(item, language.eng.navLinkLang[i]);
+        item = changeInnerText(item, language.indo.navLinkLang[i]);
     });
     // hero
     changeInnerText(hashtagHero, language.indo.heroLang[0]);
@@ -108,8 +108,8 @@ function indoLang() {
     // contact
     changeInnerText(contactTitle, language.indo.contactTitle);
     // footer link
-    footerLink.forEach((item, i) => {
-        item = changeInnerText(item, language.eng.navLinkLang[i]);
+    footerLink.forEach((footer, i) => {
+        footer = changeInnerText(footer, language.indo.navLinkLang[i]);
     });
 };
 
