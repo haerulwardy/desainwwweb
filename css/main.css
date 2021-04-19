@@ -223,12 +223,15 @@ hr {
     width: 35%;
     padding: 4em 5em;
 }
+.hero-title strong {
+    font-size: 1.25em;
+}
 .hero-title h1 {
     font-size: 3em;
     font-weight: 700;
     line-height: 1.15em;
     color: var(--text-white-color);
-    margin-bottom: 1em;
+    margin: 0.25em 0 1em 0;
 }
 .hero-title h1.dark-mode {
     color: var(--dark-mode-text);
@@ -428,7 +431,7 @@ hr {
     text-decoration: none;
     background: var(--gradient-color);
     color: var(--text-white-color);
-    padding: 0.5em 2.5em;
+    padding: 0.5em 2em;
     border-radius: 0.25em;
     transition: 0.2s;
     margin-top: 1em;
