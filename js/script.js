@@ -2,7 +2,7 @@
 let language = {
     indo: {
         navLinkLang: ['Beranda', 'Kenapa Harus Kami?', 'Layanan', 'Kontak Kami' ],
-        heroLang: ['Diskon 50%', 'Kreasikan Website impian anda', 'Layanan kami'],
+        heroLang: ['#CobaSekarang', 'Kreasikan Website impian anda', 'Layanan kami'],
         cardLang: {
             titleCardHeading: ['Akurat', 'Unlimited Revisi','Mudah Dan Modern'],
             titleCardParagraph: ['Proses membangun website langkah demi langkah.', 'Kami akan membantu menyelesaikan permasalahan mu!', 'Dikemas dengan mudah dan produk yang modern.']
@@ -16,7 +16,7 @@ let language = {
     },
     eng: {
         navLinkLang: ['Home', 'Why Should we?', 'Our Services', 'Our Contact' ],
-        heroLang: ['Discount 50%', 'Create your dream website', 'See Our Services'],
+        heroLang: ['#TryNow', 'Create your dream website', 'See Our Services'],
         cardLang: {
             titleCardHeading: ['Be accurate', 'Unlimited Revisions','Easy And Modern'],
             titleCardParagraph: ['The process of building a website step by step.', 'We will help solve your problem!', 'Packed with ease and a modern product.']

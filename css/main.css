@@ -221,7 +221,7 @@ hr {
     background: var(--dark-mode-card);
 }
 .hero-title {
-    width: 35%;
+    width: 32%;
     padding: 4em 5em;
 }
 .hero-title strong {
@@ -232,7 +232,7 @@ hr {
     font-weight: 700;
     line-height: 1.15em;
     color: var(--text-white-color);
-    margin: 0.25em 0 1em 0;
+    margin-bottom: 1em;
 }
 .hero-title h1.dark-mode {
     color: var(--dark-mode-text);
@@ -424,6 +424,7 @@ hr {
 .contact--info-number {
     display: flex;
     flex-direction: column;
+    margin-top: 1em;
 }
 .contact--info-number strong {
     font-size: 1.35em
@@ -432,10 +433,10 @@ hr {
     text-decoration: none;
     background: var(--gradient-color);
     color: var(--text-white-color);
-    padding: 0.5em 2em;
+    padding: 0.75em 2em;
     border-radius: 0.25em;
     transition: 0.2s;
-    margin-top: 1em;
+    margin-top: 0.75em;
 }
 .contact-blank-bg {
     width: 400px;
@@ -505,7 +506,6 @@ hr {
     }
     .header-hero {
         min-height: auto;
-        padding: 0 1em;
     }
     .services {
         margin-top: 5em;
