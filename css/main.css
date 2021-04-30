@@ -41,6 +41,7 @@ html {
 }
 body {
     overflow-x: hidden;
+    /* font-family: 'Poppins', sans-serif; */
 }
 body.dark-mode {
     background-color: var(--dark-mode-bg);
@@ -448,15 +449,36 @@ hr {
     right: -120px;
 }
 
-/* quotes */
-.quotes {
+/* portfolio */
+.portfolio {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-family: var(--primary-font);
-    padding: 6em 0;
+    margin-bottom: 6em;
+    /* background-color: red; */
 }
-.quotes h2 {
-    font-size: 3em;
+.portfolio-container img {
+    width: 100%;
+    border-radius: 0.5em;
+    margin: 3em 0;
 }
+.portfolio-container a {
+    text-decoration: none;
+    background: var(--gradient-color);
+    color: var(--text-white-color);
+    padding: 0.95em 3.75em;
+    border-radius: 0.5em;
+    transition: 0.2s;
+}
+.portfolio-container a:hover {
+    opacity: 0.9;
+}
+/* end portfolio */
+
+
 
 /* footer */
 .footer {

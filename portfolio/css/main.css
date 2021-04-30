@@ -59,10 +59,14 @@ header {
     margin-bottom: 4em;
 }
 .header-title h1 {
-    font-size: 2.75em;
-    line-height: 1.15em;
+    font-size: 3em;
+    line-height: 1.25em;
     font-weight: 600;
     color: var(--primary-text-color);
+}
+.header-title h1 span {
+    color: var(--secondary-color);
+    opacity: 0.8;
 }
 .header-title p {
     color: var(--primary-text-color);
@@ -158,7 +162,7 @@ header {
     color: var(--default-color);
     opacity: 0.6;
 }
-.title-col-portfolio p a {
+.title-col-portfolio p span {
     text-decoration: none;
     /* color: #5ca3e0; */
     color: var(--secondary-color);
@@ -213,6 +217,7 @@ header {
     width: 1.75em;
     height: 1.75em;
     color: var(--primary-color);
+    transition: ease 0.1s;
 }
 .modal-close:hover {
     background-color: #2472b6;
@@ -236,13 +241,33 @@ header {
     margin-top: 2em;
 }
 .modal-action hr {
-    margin-bottom: 1.25em;
+    margin-bottom: 1.75em;
 }
 .modal-action a {
     background-color: var(--primary-text-color);
     color: var(--default-color);
     padding: 0.65em 2em;
     text-decoration: none;
+    transition: ease 0.1s;
+}
+.modal-action a:hover {
+    background-color: #2472b6;
+}
+.modal-social {
+    margin-top: 2.5em;
+}
+.modal-social h5 {
+    font-weight: 600;
+    opacity: 0.6;
+}
+.social-icon {
+    margin-top: 0.75em;
+}
+.modal-social img {
+    width: 46px;
+}
+.modal-social img:nth-child(1) {
+    margin-right: 1em;
 }
 
 

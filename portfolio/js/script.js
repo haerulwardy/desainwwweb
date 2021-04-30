@@ -1,24 +1,27 @@
 // menu active
-const portMenus = document.querySelectorAll('.portfolio-menus');
-portMenus.forEach(menu => {
-    menu.addEventListener('click', function(e) {
-        e.preventDefault();
-        portMenus.forEach(menu => {
-            menu.classList.remove('active')
-        })
-        this.classList.add('active');
+function showPortfolio() {
+    const portMenus = document.querySelectorAll('.portfolio-menus');
+    portMenus.forEach(menu => {
+        menu.addEventListener('click', function(e) {
+            e.preventDefault();
+            portMenus.forEach(menu => {
+                menu.classList.remove('active')
+            })
+            this.classList.add('active');
 
-        const dataValue = this.getAttribute('data-category');
-        const columnPorto = document.querySelectorAll('.col-portfolio');
-        columnPorto.forEach(col => {
-            if (col.className.includes(dataValue)) {
-                col.classList.remove('empty');
-            } else {
-                col.classList.add('empty');
-            }
-        })
+            const dataValue = this.getAttribute('data-category');
+            const columnPorto = document.querySelectorAll('.col-portfolio');
+            columnPorto.forEach(col => {
+                if (col.className.includes(dataValue)) {
+                    col.classList.remove('empty');
+                } else {
+                    col.classList.add('empty');
+                }
+            })
+        });
     });
-});
+};
+showPortfolio();
 
 // portfolio
 const columnPorto = document.querySelectorAll('.col-portfolio');
@@ -28,6 +31,7 @@ columnPorto.forEach(porto => {
         showModal();
         // show image
         showImage(this);
+        getDataUiFrom(this);
     });
 });
 // show modal function
@@ -58,4 +62,8 @@ function closeModal() {
 function showImage(el) {
     const modalImg = document.getElementById('modal-img');
     modalImg.src = el.firstElementChild.src;
+};
+function getDataUiFrom(el) {
+    const uiFrom = document.getElementById('ui-from');
+    uiFrom.innerText = el.lastElementChild.lastElementChild.firstElementChild.innerText;
 };

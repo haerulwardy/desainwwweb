@@ -1,7 +1,7 @@
 // change language
 let language = {
     indo: {
-        navLinkLang: ['Beranda', 'Kenapa Harus Kami?', 'Layanan', 'Kontak Kami' ],
+        navLinkLang: ['Beranda', 'Kenapa Harus Kami?', 'Layanan', 'Kontak Kami', 'Portofolio' ],
         heroLang: ['#CobaSekarang', 'Kreasikan Website impian anda', 'Layanan kami'],
         cardLang: {
             titleCardHeading: ['Akurat', 'Unlimited Revisi','Mudah Dan Modern'],
@@ -15,7 +15,7 @@ let language = {
         contactTitle: 'Kontak' 
     },
     eng: {
-        navLinkLang: ['Home', 'Why Should we?', 'Our Services', 'Our Contact' ],
+        navLinkLang: ['Home', 'Why Should we?', 'Our Services', 'Our Contact', 'Portfolio' ],
         heroLang: ['#TryNow', 'Create your dream website', 'See Our Services'],
         cardLang: {
             titleCardHeading: ['Be accurate', 'Unlimited Revisions','Easy And Modern'],
