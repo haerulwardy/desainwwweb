@@ -78,22 +78,23 @@ header {
     padding: 7em 4em;
 }
 .portfolio-menu {
-    width: 35%;
+    width: auto;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
 }
 .portfolio-menus {
     color: rgba(248, 249, 250, 0.5);
     text-decoration: none;
     font-weight: 600;
-    transition: ease 0.2s;
+    transition: ease 0.1s;
+    padding: 0 10px;
 }
 .portfolio-menus.active {
     color: var(--secondary-color);
 }
 .portfolio-menus:hover {
     color: var(--secondary-color);
+    opacity: 0.8;
 }
 .portfolios-portfolio {
     display: grid;
